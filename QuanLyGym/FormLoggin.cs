@@ -58,6 +58,8 @@ namespace QuanLyGym
 
         }
 
+        // Hiển thị mật khẩu
+
         private void chkShowpass_CheckedChanged(object sender, EventArgs e)
         {
             txtPass.UseSystemPasswordChar = !chkShowpass.Checked;
