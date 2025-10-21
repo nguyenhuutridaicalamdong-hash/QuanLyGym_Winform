@@ -109,5 +109,9 @@ namespace QuanLyGym
             }
         }
 
+        private void txtLoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
