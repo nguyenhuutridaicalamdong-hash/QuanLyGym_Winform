@@ -28,6 +28,9 @@ namespace QuanLyGym
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             // lấy ra user và pass từ database để so sánh
+            // nháp 11 ngày có trôi về tặng em 1 cây son
+            // để em tô hồng duyên
+            // chờ đến bao giờ
             string Username = txtUser.Text;
             string Password = txtPass.Text;
 
