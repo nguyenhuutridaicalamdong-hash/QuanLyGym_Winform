@@ -186,5 +186,20 @@ namespace QuanLyGym
                 dgvHoiVien.DataSource = dt;
             }
         }
+
+        private void txtHoTen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGioiTinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
