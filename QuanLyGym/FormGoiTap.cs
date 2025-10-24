@@ -68,7 +68,7 @@ namespace QuanLyGym
                 cmd.ExecuteNonQuery();
             }
             LoadData();
-            MessageBox.Show("✅ Thêm gói tập thành công!");
+            MessageBox.Show(" Thêm gói tập thành công!");
         }
 
         private void btnXoa_Click_1(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace QuanLyGym
                         cmd.ExecuteNonQuery();
                     }
                     LoadData();
-                    MessageBox.Show("🗑️ Xóa thành công!");
+                    MessageBox.Show(" Xóa thành công!");
                 }
             }
         }
