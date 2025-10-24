@@ -28,175 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.hộiViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.góiTậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngKýGóiTậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // button5
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hộiViênToolStripMenuItem,
-            this.sảnPhẩmToolStripMenuItem,
-            this.góiTậpToolStripMenuItem,
-            this.đăngKýGóiTậpToolStripMenuItem,
-            this.hóaĐơnToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1496, 48);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button5.BackColor = System.Drawing.Color.Tan;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button5.Location = new System.Drawing.Point(693, 265);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 47);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Đăng Ký Gói Tập";
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // hộiViênToolStripMenuItem
+            // button4
             // 
-            this.hộiViênToolStripMenuItem.Name = "hộiViênToolStripMenuItem";
-            this.hộiViênToolStripMenuItem.Size = new System.Drawing.Size(123, 36);
-            this.hộiViênToolStripMenuItem.Text = "Hội viên";
-            this.hộiViênToolStripMenuItem.Click += new System.EventHandler(this.hộiViênToolStripMenuItem_Click);
+            this.button4.BackColor = System.Drawing.Color.Tan;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button4.Location = new System.Drawing.Point(435, 265);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(136, 47);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Hóa Đơn";
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // sảnPhẩmToolStripMenuItem
+            // button3
             // 
-            this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(141, 36);
-            this.sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
-            this.sảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem_Click);
-            // 
-            // góiTậpToolStripMenuItem
-            // 
-            this.góiTậpToolStripMenuItem.Name = "góiTậpToolStripMenuItem";
-            this.góiTậpToolStripMenuItem.Size = new System.Drawing.Size(111, 36);
-            this.góiTậpToolStripMenuItem.Text = "Gói tập";
-            this.góiTậpToolStripMenuItem.Click += new System.EventHandler(this.góiTậpToolStripMenuItem_Click);
-            // 
-            // đăngKýGóiTậpToolStripMenuItem
-            // 
-            this.đăngKýGóiTậpToolStripMenuItem.Name = "đăngKýGóiTậpToolStripMenuItem";
-            this.đăngKýGóiTậpToolStripMenuItem.Size = new System.Drawing.Size(204, 36);
-            this.đăngKýGóiTậpToolStripMenuItem.Text = "Đăng ký gói tập";
-            this.đăngKýGóiTậpToolStripMenuItem.Click += new System.EventHandler(this.đăngKýGóiTậpToolStripMenuItem_Click);
-            // 
-            // hóaĐơnToolStripMenuItem
-            // 
-            this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(126, 36);
-            this.hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
-            this.hóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnToolStripMenuItem_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.OldLace;
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(433, 87);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(631, 704);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(59, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 74);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Hội Viên";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.Wheat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button3.Location = new System.Drawing.Point(305, 265);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(136, 47);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Gói Tập";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Wheat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(362, 126);
+            this.button2.Location = new System.Drawing.Point(563, 265);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 74);
+            this.button2.Size = new System.Drawing.Size(136, 47);
             this.button2.TabIndex = 0;
             this.button2.Text = "Sản Phẩm";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button1
             // 
-            this.button3.BackColor = System.Drawing.Color.Wheat;
-            this.button3.Location = new System.Drawing.Point(59, 320);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(204, 74);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Gói Tập";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button1.Location = new System.Drawing.Point(176, 265);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 47);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Hội Viên";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // pictureBox1
             // 
-            this.button4.BackColor = System.Drawing.Color.Tan;
-            this.button4.Location = new System.Drawing.Point(362, 320);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(204, 74);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Hóa Đơn";
-            this.button4.UseVisualStyleBackColor = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-43, -11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(297, 189);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
-            // button6
+            // label1
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button6.Location = new System.Drawing.Point(173, 542);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(302, 75);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Đăng Ký Gói Tập";
-            this.button6.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(278, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(430, 35);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Hệ Thống Quản Lý Phòng GYM";
             // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
-            this.ClientSize = new System.Drawing.Size(1496, 841);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(997, 538);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem hộiViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem góiTậpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đăngKýGóiTậpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hóaĐơnToolStripMenuItem;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

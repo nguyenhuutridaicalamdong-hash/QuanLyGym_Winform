@@ -55,7 +55,7 @@ namespace QuanLyGym
                 cmd.Parameters.AddWithValue("@TenSP", txtTenSP.Text);
                 cmd.Parameters.AddWithValue("@Gia", Convert.ToDecimal(txtGia.Text));
                 cmd.Parameters.AddWithValue("@SoLuong", Convert.ToInt32(txtSoLuong.Text));
-                cmd.Parameters.AddWithValue("@Loai", txtLoai.Text);
+                cmd.Parameters.AddWithValue("@Loai", txtDonVi.Text);
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -76,7 +76,7 @@ namespace QuanLyGym
                     cmd.Parameters.AddWithValue("@TenSP", txtTenSP.Text);
                     cmd.Parameters.AddWithValue("@Gia", Convert.ToDecimal(txtGia.Text));
                     cmd.Parameters.AddWithValue("@SoLuong", Convert.ToInt32(txtSoLuong.Text));
-                    cmd.Parameters.AddWithValue("@Loai", txtLoai.Text);
+                    cmd.Parameters.AddWithValue("@Loai", txtDonVi.Text);
                     conn.Open();
                     cmd.ExecuteNonQuery();
                 }
@@ -117,6 +117,11 @@ namespace QuanLyGym
                 da.Fill(dt);
                 dgvSanPham.DataSource = dt;
             }
+        }
+
+        private void txtTenSP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace QuanLyGym
 {
@@ -21,7 +23,8 @@ namespace QuanLyGym
 
         private void FormGoiTap_Load(object sender, EventArgs e)
         {
-            cmbThoiHan.Items.AddRange(new object[] { "1 tháng", "3 tháng", "6 tháng", "12 tháng" });
+            
+            cmbThoiHan.Items.AddRange(new object[] { "1 tháng", "2 tháng", "3 tháng", "4 tháng", "5 tháng", "6 tháng", "7 tháng", "8 tháng", "9 tháng", "10 tháng", "12 tháng" });
             LoadData();
 
         }
@@ -38,16 +41,29 @@ namespace QuanLyGym
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        
+
+        
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
+            string txt = cmbThoiHan.Text ?? "";
+            var m = Regex.Match(txt, @"\d+");
+            if (!m.Success)
+            {
+                MessageBox.Show("Chọn thời hạn hợp lệ.");
+                return;
+            }
+            int thoiHanMonths = int.Parse(m.Value, CultureInfo.InvariantCulture);
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO GoiTap (TenGoi, Gia, ThoiHan, MoTa) VALUES (@TenGoi, @Gia, @ThoiHan, @MoTa)";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@TenGoi", txtTenGoi.Text);
-                cmd.Parameters.AddWithValue("@Gia", Convert.ToDecimal(txtGia.Text));
-                cmd.Parameters.AddWithValue("@ThoiHan", cmbThoiHan.Text);
-                cmd.Parameters.AddWithValue("@MoTa", txtMoTa.Text);
+                cmd.Parameters.Add("@TenGoi", SqlDbType.NVarChar, 200).Value = txtTenGoi.Text;
+                cmd.Parameters.Add("@Gia", SqlDbType.Decimal).Value = decimal.Parse(txtGia.Text, CultureInfo.CurrentCulture);
+                cmd.Parameters.Add("@ThoiHan", SqlDbType.Int).Value = thoiHanMonths;
+                cmd.Parameters.Add("@MoTa", SqlDbType.NVarChar, 500).Value = txtMoTa.Text;
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -55,7 +71,7 @@ namespace QuanLyGym
             MessageBox.Show("✅ Thêm gói tập thành công!");
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             if (dgvGoiTap.CurrentRow != null)
             {
