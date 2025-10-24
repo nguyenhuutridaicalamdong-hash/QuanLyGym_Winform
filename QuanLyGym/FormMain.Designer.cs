@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGoiTap = new System.Windows.Forms.Button();
+            this.btnSanPham = new System.Windows.Forms.Button();
+            this.btnHoiVien = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,7 +44,7 @@
             this.button5.BackColor = System.Drawing.Color.Tan;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button5.Location = new System.Drawing.Point(693, 265);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 47);
             this.button5.TabIndex = 0;
@@ -56,54 +56,57 @@
             this.button4.BackColor = System.Drawing.Color.Tan;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button4.Location = new System.Drawing.Point(435, 265);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 47);
             this.button4.TabIndex = 0;
             this.button4.Text = "Hóa Đơn";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnGoiTap
             // 
-            this.button3.BackColor = System.Drawing.Color.Wheat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(305, 265);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 47);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Gói Tập";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnGoiTap.BackColor = System.Drawing.Color.Wheat;
+            this.btnGoiTap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnGoiTap.Location = new System.Drawing.Point(305, 265);
+            this.btnGoiTap.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGoiTap.Name = "btnGoiTap";
+            this.btnGoiTap.Size = new System.Drawing.Size(136, 47);
+            this.btnGoiTap.TabIndex = 0;
+            this.btnGoiTap.Text = "Gói Tập";
+            this.btnGoiTap.UseVisualStyleBackColor = false;
+            this.btnGoiTap.Click += new System.EventHandler(this.btnGoiTap_Click);
             // 
-            // button2
+            // btnSanPham
             // 
-            this.button2.BackColor = System.Drawing.Color.Wheat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(563, 265);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 47);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Sản Phẩm";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSanPham.BackColor = System.Drawing.Color.Wheat;
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSanPham.Location = new System.Drawing.Point(563, 265);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.Size = new System.Drawing.Size(136, 47);
+            this.btnSanPham.TabIndex = 0;
+            this.btnSanPham.Text = "Sản Phẩm";
+            this.btnSanPham.UseVisualStyleBackColor = false;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
             // 
-            // button1
+            // btnHoiVien
             // 
-            this.button1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(176, 265);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Hội Viên";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHoiVien.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnHoiVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHoiVien.Location = new System.Drawing.Point(176, 265);
+            this.btnHoiVien.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHoiVien.Name = "btnHoiVien";
+            this.btnHoiVien.Size = new System.Drawing.Size(136, 47);
+            this.btnHoiVien.TabIndex = 0;
+            this.btnHoiVien.Text = "Hội Viên";
+            this.btnHoiVien.UseVisualStyleBackColor = false;
+            this.btnHoiVien.Click += new System.EventHandler(this.btnHoiVien_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-43, -11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(297, 189);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,9 +133,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGoiTap);
+            this.Controls.Add(this.btnSanPham);
+            this.Controls.Add(this.btnHoiVien);
             this.Name = "FormMain";
             this.Text = "FormMain";
             this.Load += new System.EventHandler(this.FormMain_Load);
@@ -144,9 +147,9 @@
 
         #endregion
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGoiTap;
+        private System.Windows.Forms.Button btnSanPham;
+        private System.Windows.Forms.Button btnHoiVien;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;

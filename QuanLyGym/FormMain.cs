@@ -42,9 +42,20 @@ namespace QuanLyGym
             new FormGoiTap().ShowDialog();
         }
 
-        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnHoiVien_Click(object sender, EventArgs e)
+        {
+            new FormHoiVien().ShowDialog();
+        }
+
+        private void btnGoiTap_Click(object sender, EventArgs e)
         {
             new FormGoiTap().ShowDialog();
+        }
+
+        private void btnSanPham_Click(object sender, EventArgs e)
+        {
+            new FormSanPham().ShowDialog();
+
         }
     }
 }

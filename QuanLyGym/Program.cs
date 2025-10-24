@@ -16,7 +16,7 @@ namespace QuanLyGym
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHoiVien());
+            Application.Run(new FormMain());
         }
     }
 }

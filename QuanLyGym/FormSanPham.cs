@@ -50,12 +50,13 @@ namespace QuanLyGym
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO SanPham (TenSP, Gia, SoLuong, Loai) VALUES (@TenSP, @Gia, @SoLuong, @Loai)";
+                string query = "INSERT INTO SanPham (TenSP, DonVi, Gia,SoLuongTon, MoTa) VALUES (@TenSP, @DonVi, @Gia, @SoLuongTon, @MoTa)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@TenSP", txtTenSP.Text);
                 cmd.Parameters.AddWithValue("@Gia", Convert.ToDecimal(txtGia.Text));
-                cmd.Parameters.AddWithValue("@SoLuong", Convert.ToInt32(txtSoLuong.Text));
-                cmd.Parameters.AddWithValue("@Loai", txtDonVi.Text);
+                cmd.Parameters.AddWithValue("@SoLuongTon", Convert.ToInt32(txtSoLuong.Text));
+                cmd.Parameters.AddWithValue("@DonVi", txtDonVi.Text);
+                cmd.Parameters.AddWithValue("@MoTa", txtMoTa.Text);
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
