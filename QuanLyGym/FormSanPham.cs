@@ -34,9 +34,19 @@ namespace QuanLyGym
                 da.Fill(dt);
                 dgvSanPham.DataSource = dt;
             }
+        }        
+
+        private void txtLoai_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -53,7 +63,7 @@ namespace QuanLyGym
             MessageBox.Show(" Thêm sản phẩm thành công!");
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnSua_Click_1(object sender, EventArgs e)
         {
             if (dgvSanPham.CurrentRow != null)
             {
@@ -75,7 +85,7 @@ namespace QuanLyGym
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             if (dgvSanPham.CurrentRow != null)
             {
@@ -96,7 +106,7 @@ namespace QuanLyGym
             }
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click_1(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -107,16 +117,6 @@ namespace QuanLyGym
                 da.Fill(dt);
                 dgvSanPham.DataSource = dt;
             }
-        }
-
-        private void txtLoai_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

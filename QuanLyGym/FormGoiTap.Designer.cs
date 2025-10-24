@@ -43,11 +43,11 @@
             // dgvGoiTap
             // 
             this.dgvGoiTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGoiTap.Location = new System.Drawing.Point(559, 249);
+            this.dgvGoiTap.Location = new System.Drawing.Point(458, 139);
             this.dgvGoiTap.Name = "dgvGoiTap";
             this.dgvGoiTap.RowHeadersWidth = 51;
             this.dgvGoiTap.RowTemplate.Height = 24;
-            this.dgvGoiTap.Size = new System.Drawing.Size(240, 150);
+            this.dgvGoiTap.Size = new System.Drawing.Size(496, 342);
             this.dgvGoiTap.TabIndex = 0;
             // 
             // label1

@@ -62,8 +62,7 @@ namespace QuanLyGym
         }
 
         // Hiển thị mật khẩu
-        // Bình ngu ngốc
-        // Trí đẹp trai vãi cả lòn
+      
 
         private void chkShowpass_CheckedChanged(object sender, EventArgs e)
         {
